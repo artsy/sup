@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/ilyakava/sup.svg?branch=generalize)](https://travis-ci.org/ilyakava/sup)
-[![Stories in Ready](https://badge.waffle.io/ilyakava/sup.png?label=ready&title=Ready)](https://waffle.io/ilyakava/sup)
+[![Build Status](https://travis-ci.org/artsy/sup.svg?branch=master)](https://travis-ci.org/artsy/sup)
 
 ## About
 
