@@ -17,7 +17,7 @@ script: bundle exec rake fspec
 deploy:
   provider: heroku
   api_key:
-    secure: GXevZgGpL2Bd7RbjypHC+PMCNNHERkZ086CHr66LNM4cNp5DRx9UW8pAhbv0tIN5XW54OLCVyyFSRuqM71qoxJ53QyGMrhNcihugWkNODY81lBtRSxAb6aNzH1Edt19iEfYbfPq2xc7YqaoNyPELgyGfpB85mm/1HNLZFgcjiV4=
+    secure: "Ao70RwOTMe0D6Fxh0S0JclxJUDlYrXHqTdffS2z9ws89xeexft4Yzrh0T5CnnvXL4trOFfqeZHMFccIGUpAHb64FWwweSq77rvdG8nW7VRzGOO/KFg6WKQva98WYYVl7vo56AgNEXjxBVMr6Ea8/VneNap9ydhDP9lrqdnf5xms="
   app: sup-production
   on:
     repo: artsy/sup
