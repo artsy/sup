@@ -134,4 +134,6 @@ Run `rake fspec` to exclude the slow specs that check the convergence of the pai
 
 ## License
 
+ (c) Artsy, 2015
+
 MIT
