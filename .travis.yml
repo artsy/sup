@@ -10,3 +10,11 @@ notifications:
 before_script:
   - psql -c 'create database sup_test;' -U postgres
   - bin/rake db:migrate RAILS_ENV=test
+deploy:
+  provider: heroku
+  api_key:
+    secure: "Ao70RwOTMe0D6Fxh0S0JclxJUDlYrXHqTdffS2z9ws89xeexft4Yzrh0T5CnnvXL4trOFfqeZHMFccIGUpAHb64FWwweSq77rvdG8nW7VRzGOO/KFg6WKQva98WYYVl7vo56AgNEXjxBVMr6Ea8/VneNap9ydhDP9lrqdnf5xms="
+  app: sup-production
+  on:
+    branch: sup.artsy.net
+    repo: artsy/sup
