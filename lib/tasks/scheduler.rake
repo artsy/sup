@@ -33,3 +33,13 @@ task trigger_weekly_email: :environment do
     puts 'Done sending weekly email...'
   end
 end
+
+
+desc 'truncate the db to just a year of data so that it fits 10k rows'
+task trigger_db_truncation: :environment do
+  meetings = "delete from meetings where created_at < CURRENT_DATE - INTERVAL '365 day';"
+  meeting_members = "delete from meeting_members where created_at < CURRENT_DATE - INTERVAL '365 day';"
+
+  ActiveRecord::Base.connection.exec_query(meetings)
+  ActiveRecord::Base.connection.exec_query(meeting_members)
+end

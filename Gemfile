@@ -10,7 +10,7 @@ gem 'compass-rails'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'figaro', github: 'sealocal/figaro'
+gem 'figaro', git: 'https://github.com/sealocal/figaro.git'
 gem 'premailer-rails'
 gem 'nokogiri'
 gem 'picky' # has a more performant array intersection method
