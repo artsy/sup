@@ -62,7 +62,7 @@ This is a rails app that can easily be [deployed with heroku](https://devcenter.
 
 ### Environment variables
 
-This app uses the [figaro](https://github.com/laserlemon/figaro) gem, so it is recommended that you place all your environment variables in a `application.yml` file in the root directory of the app. The **required** environment variables are:
+This app uses the [figaro](https://github.com/laserlemon/figaro) gem, so it is recommended that you place all your environment variables in a `application.yml` file in the `config` directory of the app. The **required** environment variables are:
 
 ```
 COMPANY_NAME: "Initech"
@@ -71,12 +71,18 @@ PRODUCTION_DOMAIN: "guarded-stream-9823.herokuapp.com"
 SMTP_USER_NAME: "ilyakava@initech.com"
 SMTP_PASSWORD: "lumberghrulz"
 SMTP_DOMAIN: "guarded-stream-9823.herokuapp.com
+ARTSY_APP_ID: 1234
+ARTSY_APP_SECRET: 1234567
+ARTSY_INTERNAL_APP_SECRET: 123456789
+ARTSY_WEB_URL: https://api.artsy.net
 ```
 
 - `COMPANY_NAME` and `COMPANY_NAME_POSSESSIVE` are used in email copy and on the website to refer to your company.
 - `PRODUCTION_DOMAIN` should be the web address (without `http` or `www`) for where you are hosting your app.
 - `SMTP_USER_NAME` and `SMTP_PASSWORD` are your email address user name and password. These are used by the app to automatically send emails from the given address.
 - `SMTP_DOMAIN` can be the same as `PRODUCTION_DOMAIN`
+- `ARTSY_APP_ID`, `ARTSY_APP_SECRET`, `ARTSY_INTERNAL_APP_SECRET`, `ARTSY_WEB_URL` are all for authentication via OAuth
+
 
 An optional but **recommended** environment variable is:
 
@@ -135,6 +141,6 @@ Run `rake fspec` to exclude the slow specs that check the convergence of the pai
 
 ## License
 
- (c) Artsy, 2015
+ (c) Artsy, 2017
 
 MIT

@@ -1,4 +1,5 @@
 Sup::Application.routes.draw do
+  mount ArtsyAuth::Engine => '/'
   root to: 'members#graph'
 
   resources :members do
