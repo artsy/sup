@@ -118,6 +118,7 @@ Once you've [deployed to heroku](https://devcenter.heroku.com/articles/getting-s
 | `rake trigger_weekly_email`    | 1X        | Daily     | never    | 15:00 UTC |
 | `rake trigger_followup_email`  | 1X        | Daily     | never    | 15:00 UTC |
 | `rake send_weekly_admin_email` | 1X        | Daily     | never    | 16:00 UTC |
+| `rake trigger_db_truncation`   | 1X        | Weekly    | never    | 16:00 UTC |
 
 Although the least frequent running choice is "Daily" on heroku, these jobs will actually be run on Friday, Sunday, Saturday, and Sunday respectively (for info on why: look in `./lib/tasks/scheduler.rake`).
 
